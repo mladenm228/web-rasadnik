@@ -16,7 +16,6 @@ export function Toast() {
             onClick={() => dismiss(notification.id)}
             aria-label="Zatvori obaveštenje"
           >
-            ×
           </button>
         </div>
       ))}
