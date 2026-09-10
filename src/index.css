@@ -1,0 +1,55 @@
+:root {
+  --color-bg: #f6f8f4;
+  --color-surface: #ffffff;
+  --color-text: #1f2a20;
+  --color-text-muted: #5c6b5d;
+  --color-border: #e0e6dd;
+  --color-accent: #2f7a4f;
+  --color-accent-soft: rgba(47, 122, 79, 0.15);
+  --color-accent-contrast: #ffffff;
+  --color-danger: #b3403f;
+  --color-success: #2f7a4f;
+
+  color-scheme: light;
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+[data-theme='dark'] {
+  --color-bg: #131a14;
+  --color-surface: #1c261d;
+  --color-text: #eef3ec;
+  --color-text-muted: #a2b0a3;
+  --color-border: #2c392d;
+  --color-accent: #5cb37f;
+  --color-accent-soft: rgba(92, 179, 127, 0.18);
+  --color-accent-contrast: #10190f;
+  --color-danger: #e0716f;
+  --color-success: #5cb37f;
+
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--color-bg);
+  color: var(--color-text);
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+a {
+  color: inherit;
+}
+
+.app-shell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-content {
+  flex: 1;
+}
